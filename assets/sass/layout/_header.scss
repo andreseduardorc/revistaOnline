@@ -1,0 +1,26 @@
+.title {
+    text-align: left;
+}
+
+.image {
+    height: 14rem;
+    width: 100%;
+}
+
+.text {
+    text-align: left;
+}
+
+.box__right {
+    display: none;
+}
+
+.newsletter {
+    text-align: center;
+    background-color: $lightGray;
+    padding: 1.5rem 0;
+}
+
+.text__under {
+    font-size: 2rem
+}

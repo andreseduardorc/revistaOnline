@@ -1,0 +1,60 @@
+body {
+  font-family: monospace;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 10px;
+}
+
+.nav li {
+  margin: 0, 5rem;
+}
+
+.none {
+  visibility: hidden;
+}
+
+.input__menu {
+  border-radius: 5%;
+}
+
+.title {
+  text-align: left;
+}
+
+.image {
+  height: 14rem;
+  width: 100%;
+}
+
+.text {
+  text-align: left;
+}
+
+.box__right {
+  display: none;
+}
+
+.newsletter {
+  text-align: center;
+  background-color: #d3d3d3;
+  padding: 1.5rem 0;
+}
+
+.text__under {
+  font-size: 2rem;
+}
+
+.footer {
+  text-align: center;
+  font-weight: 600;
+}
+
+.button {
+  background-color: #f9883a;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
