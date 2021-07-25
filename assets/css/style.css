@@ -2,39 +2,137 @@ body {
   font-family: monospace;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .nav {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+.nav__menu {
+  display: flex;
+  align-items: center;
   list-style: none;
   margin: 10px;
 }
-
-.nav li {
-  margin: 0, 5rem;
+.nav__li {
+  margin: 5px 10px;
+  display: inline-block;
+}
+.nav__li--none {
+  display: none;
+}
+@media (min-width: 576px) {
+  .nav__li--none {
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+.nav__li a {
+  text-decoration: none;
+}
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+}
+.nav__input-menu {
+  border-radius: 30px;
+  padding: 0 10px;
 }
 
-.none {
-  visibility: hidden;
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.input__menu {
-  border-radius: 5%;
+.container-header {
+  width: 100%;
+  padding: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  .container-header {
+    width: 60%;
+    justify-content: space-between;
+    padding: 0;
+    padding-left: 5%;
+  }
+}
+@media (min-width: 992px) {
+  .container-header {
+    width: 70%;
+  }
 }
 
-.title {
+.content {
+  width: 100%;
+  margin: 1rem auto 1rem;
+}
+@media (min-width: 576px) {
+  .content {
+    width: 49%;
+  }
+}
+@media (min-width: 768px) {
+  .content {
+    width: 33%;
+  }
+}
+.content__title {
   text-align: left;
 }
-
-.image {
-  height: 14rem;
+.content__image {
+  margin-bottom: 1rem;
   width: 100%;
 }
-
-.text {
+.content__text {
   text-align: left;
 }
 
-.box__right {
+.footer {
+  text-align: center;
+  font-weight: 600;
+}
+
+.aside {
+  width: 100%;
   display: none;
+  margin-top: 1.5rem;
+}
+@media (min-width: 576px) {
+  .aside {
+    width: 40%;
+    padding: 0 5%;
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) {
+  .aside {
+    width: 30%;
+  }
+}
+.aside__tags {
+  margin: 1rem 0;
+}
+.aside__tags-ul {
+  margin-bottom: 1rem;
+}
+.aside__tags-li {
+  list-style: none;
+  display: inline-block;
+  padding: 3px;
+  background-color: #0b68ed;
 }
 
 .newsletter {
@@ -45,11 +143,6 @@ body {
 
 .text__under {
   font-size: 2rem;
-}
-
-.footer {
-  text-align: center;
-  font-weight: 600;
 }
 
 .button {

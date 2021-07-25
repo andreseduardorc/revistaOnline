@@ -1,26 +1,45 @@
-.title {
-    text-align: left;
-}
-
-.image {
-    height: 14rem;
+header {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.text {
-    text-align: left;
+.container-header {
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include mq('small') {
+        width: 60%;
+        justify-content: space-between;
+        padding: 0;
+        padding-left: 5%;
+    }
+    @include mq('large') {
+        width: 70%;
+    }
+    // margin: auto;
 }
 
-.box__right {
-    display: none;
-}
-
-.newsletter {
-    text-align: center;
-    background-color: $lightGray;
-    padding: 1.5rem 0;
-}
-
-.text__under {
-    font-size: 2rem
+.content {
+    width: 100%;
+    margin: 1rem auto 1rem;
+    @include mq('small') {
+        width: 49%;
+    }
+    @include mq('medium') {
+        width: 33%;
+    }
+    &__title {
+        text-align: left;
+    }
+    &__image {
+        // height: 14rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    &__text {
+        text-align: left;
+    }
 }

@@ -3,3 +3,5 @@ $white:#fff;
 $lightGray:#d3d3d3;
 $orange:#f9883a;
 $blue:#0b68ed;
+// BREAKPOINTS
+$breakpoints: ( 'small': (min-width: 576px), 'medium': (min-width: 768px), 'large': (min-width: 992px), 'extralarge': (min-width: 1200px), );
